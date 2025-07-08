@@ -16,3 +16,17 @@ input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+/* Hide Next.js development indicator */
+#__next-build-watcher {
+  display: none !important;
+}
+
+/* Alternative selectors for different Next.js versions */
+div[data-nextjs-toast] {
+  display: none !important;
+}
+
+div[style*="position: fixed"][style*="bottom"][style*="left"] {
+  display: none !important;
+}
